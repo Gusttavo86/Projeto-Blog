@@ -1,0 +1,117 @@
+/*
+           seletor {
+            propriedade1: valor;
+            propriedade2: valor;
+           }
+        */
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+    body {
+        background: rgb(233, 233, 233)
+    }
+
+    h1 {
+        color: #D507E3;
+        font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        background: #98E2E4;
+
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+
+        margin: 20px 20px 20px 20px; /* 20px em cima, 20px na direita, 20px embaixo e 20px na esquerda */
+        margin: 20px 50px 30px; /* 20px em cima, 50px na esquerda e 30px na direita */
+        margin: 20px 40px; /* 20px em cima e embaixo, 40px na esquerda e na direita */
+        margin: 20px; /* 20px em todas as direções */
+        margin: 0px;
+
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+
+        padding: 20px 20px 20px 20px; /* 20px em cima, 20px na direita, 20px embaixo e 20px na esquerda */
+        padding: 20px 50px 30px; /* 20px em cima, 50px na esquerda e 30px na direita */
+        padding: 20px 40px; /* 20px em cima e embaixo, 40px na esquerda e na direita */
+        padding: 20px; /* 20px em todas as direções */
+    }
+
+    article {
+        background: red;
+    }
+
+    h2 {
+        font-size: 0.9em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    p {
+        font-size: 0.8em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    main {
+        display: flex; /* Todos os elementos dentro da tag main serão organizados de forma flexível. */
+    }
+
+    article{
+        background: #01ff66;
+        margin: 1em;
+        padding: 1em;
+        border-radius: 20px;
+        box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.1);
+        transition: transform 0.1s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    @keyframes balanco {
+        0% { transform: rotate(0deg); }
+        25% { transform: rotate(-10deg); } /* Inclina para a esquerda */
+        50% { transform: rotate(10deg); }  /* Inclina para a direita */
+        75% { transform: rotate(-10deg); } /* Inclina para a esquerda novamente */
+        100% { transform: rotate(0deg); }  /* Retorna à posição inicial */
+    }
+
+    article:hover {
+        animation: balanco 1.2s ease infinite; /* Aumenta o tempo para 1.2s, deixando o balanço mais lento */
+        background-color: #7abce8;  /* Muda para cinza */
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Adiciona um box-shadow de 5px */
+    
+    }
+
+    ul {
+        display: flex; /* Todos os elementos dentro da tag ul são organizados de forma flexivel*/
+        /* list-style: upper-roman;  Estiliza a lista com números romanos */
+        margin: 1em;
+        list-style: none;
+        background: #333;
+    }
+
+    li {
+        margin: 0.5em;
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: line-through;
+    }
+    nav a:hover{
+        text-decoration: underline;
+    }
+
+    article a{
+        color: #D507E3;
+        text-decoration: none;
+    }
+
+    footer {
+        background: #98E2E4;
+        text-align: center;
+        padding: 1em;
+    }
